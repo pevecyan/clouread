@@ -48,3 +48,8 @@ body{
   right: 10px;
   left: auto;
 }
+
+.no-padding-margin{
+  padding: 0px;
+  margin: 0px;
+}
