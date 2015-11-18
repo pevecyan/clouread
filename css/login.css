@@ -33,6 +33,7 @@
 .login-form{
 	background-color:#2f363e;
 	height:100%;
+	padding-bottom: 10px;
 	
 }
 
@@ -50,13 +51,14 @@
 .registration-form{
 	background-color:#2f363e;
 	height:100%;
+	padding-bottom: 10px;
 }
 
 .form-basic-input{
 	outline: 0px;
 	color:#00aad4;
+	width:100%;
 	border: 0px;
-	width:200px;
 	margin-top:30px;
 	background-color: #1c2023;
 	height:30px;
@@ -81,12 +83,19 @@
 	background-color: #00aad4;
 }
 .login-submit{
-	margin-top: 170px;
+	margin-top: 50px;
 }
 
 .form-basic-inputs-container{
-	display: table;
     margin: 0 auto;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 30px;
+}
+.form-basic-inputs-container[class~=login]{
+    margin: 0 auto;
+	margin-left: 100px;
+	margin-right: 100px;
 	margin-bottom: 30px;
 }
 
@@ -134,3 +143,22 @@
 
 }
 
+.login-image-container{
+	background-color: #212429;
+	width:100px;
+	height:100px;
+	border-radius: 50%;
+	margin: 20px auto;
+	overflow: hidden;
+	margin-bottom: 0px;
+}
+.login-image{
+	background-image: url('../images/network60.png');
+	background-size: 80px;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100px;
+	height: 100px;
+	
+	
+}

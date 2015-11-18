@@ -14,13 +14,56 @@
 		
 	</head>
 	<body>
+		<div class="overlay hidden">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+					</div>
+					<div class="col-md-4">
+						<div class="add-source-panel">
+							<div class="add-source-topbar">
+								<div class="add-source-title">Add new feed</div>
+								<div class="add-source-close"></div>
+							</div>
+							<div class="add-source-content">
+								<div class="add-source-input-label">Url</div>
+								<div class="add-source-url-input-container">
+									<input class="add-source-url-input" type="text"/>
+								</div>
+								<div class="add-source-input-label">Category</div>
+								<div class="add-source-category-input-container">
+									<select class="add-source-category-input">
+										<option style="font-style: italic">New category</option>
+										<option selected>Unsorted</option>
+										<option>News</option>
+										<option>Tech</option>
+									</select>
+								</div>
+								<div class="add-source-input-label hidden">Category name</div>
+								<div class="add-source-category-name-input-container hidden">
+									<input class="add-source-category-name-input" type="text" />
+								</div>
+								<div class="add-source-add-button-container">
+									<div class="add-source-add-button">
+										Done
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="container">
 			<div class="logo-container">
 				<div class="logo"></div>
 			</div>
 			<div class="panel-main panel-shadow">
 				<div class="panel-main-container">
-					<div class="sidebar">
+					<div class="hidden-xs hidden-sm sidebar sidebar-small-show">
+						<div class="hidden-md hidden-lg sidebar-close"></div>
 						<div class="user-panel">
 							<div class="user-image-panel">
 								<div class="user-image-container">
@@ -29,7 +72,7 @@
 							</div>
 							<div class="user-name-panel">
 								<div class="user-name">
-									Zan Pevec
+									Žan Pevec
 								</div>
 							</div>
 							<div class="user-seperator"></div>
@@ -45,6 +88,9 @@
 								</div>
 								<div class="user-menu-item">
 									<div class="user-menu-item-text">New Source</div>
+								</div>
+								<div class="user-menu-item">
+									<div class="user-menu-item-text">Settings</div>
 								</div>
 								<div class="user-menu-item">
 									<div class="user-menu-item-text">Logout</div>
@@ -91,13 +137,14 @@
 						<div class="topbar-panel">
 							<div class="row">
 								<div class="col-md-8">
+									<div class="menu-button"></div>
 									<div class="feed-title-panel">
 										<div class="feed-title">
 											Breaking news
 										</div>
 									</div>	
 								</div>
-								<div class="hidden-xs hidden-sm col-md-4">
+								<div class=" col-md-4">
 									<div class="search-panel">
 										<div class="search-input-container">
 											<input class="search-input" type="text" placeholder="Search"> 
@@ -114,7 +161,7 @@
 								<div class="story-item">
 									<div class="story-item-title-container">
 										<div class="story-item-title">
-											Ta da
+											The most popular instrument in Slovenia
 										</div>
 										<div class="story-item-actions">
 											<div class="story-item-action">
@@ -124,13 +171,11 @@
 												<div class="hate-action"></div>
 											</div>
 										</div>
-										<div class="story-item-time">
-											20 minutes ago
-										</div>
 									</div>
 									<div class="story-item-preview">
-										lorem ipsum
+										In Slovenia, the diatonic button accordion is present at almost every social event, especially in the rural areas.
 									</div>
+									<div class="story-item-time-bottom">20 minutes ago</div>
 									
 								</div>
 							</div>
@@ -138,7 +183,7 @@
 								<div class="story-item">
 									<div class="story-item-title-container">
 										<div class="story-item-title">
-											Ta da
+											A small error led to Slovenia’s worst aviation disaster of all time
 										</div>
 										<div class="story-item-actions">
 											<div class="story-item-action">
@@ -148,14 +193,12 @@
 												<div class="hate-action selected"></div>
 											</div>
 										</div>
-										<div class="story-item-time">
-											20 minutes ago
-										</div>
+										
 									</div>
 									<div class="story-item-preview">
-										lorem ipsum
+										On the early morning hours of September 1, 1966, Britannia Airways Flight 105 from London Luton was approaching Ljubljana Airport.
 									</div>
-									
+									<div class="story-item-time-bottom">3 hours ago</div>
 								</div>
 							</div>
 						</div>
