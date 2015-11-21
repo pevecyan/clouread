@@ -2,9 +2,7 @@
 $(function() {
 	$('.menu-button').on('click', toggleSidebar);
 	$('.sidebar-close').on('click', toggleSidebar);
-	$( ".love-action, .hate-action" ).bind( "click", function() {
-		toggleLoveHate($(this));
-	});
+	
 	$('.search-button').on('click', searchAction);
 	$("#UserMenuItemNewSource, #AddSourceButtonClose").bind("click",  toggleAddSourceModal);
 	$(".add-source-category-input").on("change", addSourceCategoryPicked);
@@ -13,9 +11,7 @@ $(function() {
 
 
 
-function isBreakpoint( alias ) {
-    return $('.device-' + alias).is(':visible');
-}
+
 
 //Sidebar
 function toggleSidebar(){
@@ -76,6 +72,9 @@ function loadStories(parameters){
 	for(var i = 0; i< stories.length; i++){
 		newsPanel.appendChild(createStoryItemNode(stories[i]));
 	}
+	$( ".love-action, .hate-action" ).bind( "click", function() {
+		toggleLoveHate($(this));
+	});
 }
 
 
@@ -83,7 +82,6 @@ function loadStories(parameters){
 function searchAction(){
 	var searchInputValue = $(this).parent().parent().children().children()[0].value;
 	console.log(searchInputValue);
-	window.location ="search.html";
 }
 
 
@@ -102,13 +100,17 @@ function addSourceCategoryPicked(){
 	}
 }
 function addSourceDone(){
-	//Send reqeust to server and update hoem page
-	
-	//Refresh add source modal
-	$(".add-source-url-input")[0].value = "";
-	$(".add-source-category-input")[0].selectedIndex = 1;
-	$(".add-source-category-name-input")[0].value = "";
-	$("#AddSourceCategoryNameInputLabel").addClass("hidden");
-	$("#AddSourceCategoryNameInputContainer").addClass("hidden");
-	$(".overlay").toggleClass("hidden");
+	if(!isValidUrl($(".add-source-url-input")[0].value)){
+		showInputError($(".add-source-url-input")[0], "Url not valid!");	
+	}else{
+		//Send reqeust to server and update hoem page
+		
+		//Refresh add source modal
+		$(".add-source-url-input")[0].value = "";
+		$(".add-source-category-input")[0].selectedIndex = 1;
+		$(".add-source-category-name-input")[0].value = "";
+		$("#AddSourceCategoryNameInputLabel").addClass("hidden");
+		$("#AddSourceCategoryNameInputContainer").addClass("hidden");
+		$(".overlay").fadeToggle(200);
+	}
 }

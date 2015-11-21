@@ -27,3 +27,11 @@ function isValidEmail(input){
 	var mailTest = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 	return mailTest.test(input);
 }
+function isValidUrl(input){
+	var urlTest = /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/;
+	return urlTest.test(input);
+}
+
+function isBreakpoint( alias ) {
+    return $('.device-' + alias).is(':visible');
+}

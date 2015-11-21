@@ -35,12 +35,13 @@
 }
 .menu-button{
 	float:left;
-	background: url('../images/menuActive50.png');	
+	background: url('../images/menuButton50.png');	
+	background-position: -50px 0px;
 	height:50px;
 	width: 50px;
 }
 .menu-button[class~=sidebar-hidden]{
-	background: url('../images/menu50.png');	
+	background-position: 0px 0px;
 }
 .menu-button:hover{
 	background-color: #212429;
@@ -169,33 +170,33 @@ input.search-input:focus {
 .love-action{
 	width:20px;
 	height:20px;
-	background-image: url('../images/love20.png');
+	background-image: url('../images/actions20.png');
 	background-repeat: no-repeat;
-	background-size: 20px;
+	background-position: 0px 0px;
 	margin-top: 15px;
 	margin-left: 10px;
 }
 .love-action[class~=selected], .love-action:hover{
-	background-image: url('../images/love20Color.png');
+	background-position: -20px 0px;
 }
 .love-action[class~=selected]:hover{
-	background-image: url('../images/love20.png');
+	background-position: 0px 0px;
 }
 
 .hate-action{
 	width:20px;
 	height:20px;
-	background-image: url('../images/hate20.png');
+	background-image: url('../images/actions20.png');
 	background-repeat: no-repeat;
-	background-size: 20px;
+	background-position: 0px -20px;
 	margin-top: 15px;
 	margin-left: 10px;
 }
 .hate-action[class~=selected], .hate-action:hover{
-	background-image: url('../images/hate20Color.png');
+	background-position: -20px -20px;
 }
 .hate-action[class~=selected]:hover{
-	background-image: url('../images/hate20.png');
+	background-position: 0px -20px;
 }
 
 .story-item-preview{
@@ -222,8 +223,11 @@ input.search-input:focus {
 .sidebar-close{
 	height: 50px;
 	width: 50px;
-	background: url('../images/menuActive50.png');	
-	float: right;
+	background: url('../images/menuButton50.png');	
+	background-position: 0px 0px;
+	position: absolute;
+	right:0px;
+	top:0px;
 }
 .sidebar-close:hover{
 	background-color: #2f363e;
@@ -367,11 +371,12 @@ input.search-input:focus {
 	
 }
 .add-source-close{
-	background: url('../images/menuActive50.png');	
+	background: url('../images/menuButton50.png');	
 	height:50px;
 	width: 50px;
 	float: right;
 	margin-top: -50px;
+	background-position: -50px 0px;
 }
 .add-source-close:hover{
 	background-color: #212429;	
@@ -520,6 +525,6 @@ input.search-input:focus {
 		width:100%;
 	}
 	.menu-button{
-		background: url('../images/menu50.png');	
+		background-position: 0px 0px;	
 	}
 }
