@@ -211,7 +211,6 @@ input.search-input:focus {
 	position: absolute;
     top: 0; bottom: 0; left:0;
 	z-index: 10;
-	overflow-y: overlay;
 	overflow-x: hidden;
 }
 .sidebar[class~=sidebar-hidden]{
@@ -272,7 +271,6 @@ input.search-input:focus {
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none;
 }
 
 
@@ -303,7 +301,6 @@ input.search-input:focus {
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none;
 }
 .user-category-item:hover{
 	background-color: #2f363e;
@@ -425,7 +422,6 @@ input.search-input:focus {
 	color:#00aad4;
 	-webkit-appearance: none;
     -moz-appearance: none;
-    appearance: none;
 }
 .add-source-category-input:focus{
 	outline: none;
