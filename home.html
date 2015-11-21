@@ -14,15 +14,15 @@
 		<link rel="stylesheet" type="text/css" href="css/shared.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<script src="js/main.js"></script>
-		<script src="js/data.js"></script>
+		<script src="js/data.js"></script> 
 		
 	</head>
 	<div class="device-xs visible-xs"></div>
 	<div class="device-sm visible-sm"></div>
 	<div class="device-md visible-md"></div>
 	<div class="device-lg visible-lg"></div>
-	<body onload="loadStories('loved')">
-		<div class="overlay hidden">
+	<body onload="loadStories('all')">
+		<div class="overlay" style="display:none">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4">
@@ -82,28 +82,75 @@
 							</div>
 							<div class="user-name-panel">
 								<div class="user-name">
-									Welcome!
+									Žan Pevec
 								</div>
 							</div>
 							<div class="user-seperator"></div>
 							<div class="user-menu-panel">
-								<a href="index.html">
+								<a href="home.html">
 									<div class="user-menu-item selected-menu-item">
+										<div class="user-menu-item-text">Home</div>
+									</div>
+								</a>
+								<a href="index.html">
+									<div class="user-menu-item">
 										<div class="user-menu-item-text">Loved Stories</div>
 									</div>
 								</a>
 								<a href="hated.html">
 									<div class="user-menu-item">
 										<div class="user-menu-item-text">Hated Stories</div>
-									</div>	
+									</div>
+								</a>
+								<div id="UserMenuItemNewSource" class="user-menu-item">
+									<div class="user-menu-item-text">New Source</div>
+								</div>
+								<a href="settings.html">
+									<div class="user-menu-item">
+										<div class="user-menu-item-text">Settings</div>
+									</div>
 								</a>
 								<a href="login.html">
 									<div class="user-menu-item">
-										<div class="user-menu-item-text">Login</div>
+										<div class="user-menu-item-text">Logout</div>
 									</div>
 								</a>
 							</div>
 							<div class="user-seperator"></div>
+							<div class="user-categories-panel">
+								<div class="user-category-item">
+									<div class="user-category-item-text">
+										All
+									</div>
+									<div class="user-category-item-count">
+										99
+									</div>
+								</div>
+								<div class="user-category-item">
+									<div class="user-category-item-text">
+										News
+									</div>
+									<div class="user-category-item-count">
+										99
+									</div>
+								</div>
+								<div class="user-category-item">
+									<div class="user-category-item-text">
+										Tech
+									</div>
+									<div class="user-category-item-count">
+										0
+									</div>
+								</div>
+								<div class="user-category-item">
+									<div class="user-category-item-text">
+										Unsorted
+									</div>
+									<div class="user-category-item-count">
+										1
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="content">
@@ -113,7 +160,7 @@
 									<div class="menu-button"></div>
 									<div class="feed-title-panel">
 										<h1 class="feed-title">
-											Loved Stories
+											Home
 										</h1>
 									</div>	
 								</div>

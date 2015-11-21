@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CLOUreaD</title>
+		<meta charset="UTF-8">
+		<!--JQUERY-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<!--BOOTSTRAP-->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+		
+		<link rel="stylesheet" type="text/css" href="css/shared.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script src="js/main.js"></script>
+		
+	</head>
+	<div class="device-xs visible-xs"></div>
+	<div class="device-sm visible-sm"></div>
+	<div class="device-md visible-md"></div>
+	<div class="device-lg visible-lg"></div>
+	<body>
+		<div class="overlay" style="display:none">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+					</div>
+					<div class="col-md-4">
+						<div class="add-source-panel">
+							<div class="add-source-topbar">
+								<div class="add-source-title">Add new feed</div>
+								<div id="AddSourceButtonClose" class="add-source-close"></div>
+							</div>
+							<div class="add-source-content">
+								<div class="add-source-input-label">Url</div>
+								<div class="add-source-url-input-container">
+									<input class="add-source-url-input" type="text"/>
+								</div>
+								<div class="add-source-input-label">Category</div>
+								<div class="add-source-category-input-container">
+									<select  class="add-source-category-input">
+										<option style="font-style: italic">New category</option>
+										<option selected>Unsorted</option>
+										<option>News</option>
+										<option>Tech</option>
+									</select>
+								</div>
+								<div id="AddSourceCategoryNameInputLabel" class="add-source-input-label hidden">Category name</div>
+								<div id="AddSourceCategoryNameInputContainer" class="add-source-category-name-input-container hidden">
+									<input class="add-source-category-name-input" type="text" />
+								</div>
+								<div class="add-source-add-button-container">
+									<div class="add-source-add-button">
+										Done
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<a href="index.html">
+				<div class="logo-container">
+					<div class="logo"></div>
+				</div>
+			</a>
+			<div class="panel-main panel-shadow">
+				<div class="panel-main-container">
+					<div class="hidden-xs hidden-sm sidebar">
+						<div class="hidden-md hidden-lg sidebar-close"></div>
+						<div class="user-panel">
+							<div class="user-image-panel">
+								<div class="user-image-container">
+									<div class="user-image"></div>
+								</div>
+							</div>
+							<div class="user-name-panel">
+								<div class="user-name">
+									Žan Pevec
+								</div>
+							</div>
+							<div class="user-seperator"></div>
+							<div class="user-menu-panel">
+								<a href="home.html">
+									<div class="user-menu-item">
+										<div class="user-menu-item-text">Home</div>
+									</div>
+								</a>
+								<a href="index.html">
+									<div class="user-menu-item">
+										<div class="user-menu-item-text">Loved Stories</div>
+									</div>
+								</a>
+								<a href="hated.html">
+									<div class="user-menu-item">
+										<div class="user-menu-item-text">Hated Stories</div>
+									</div>
+								</a>
+								<div id="UserMenuItemNewSource" class="user-menu-item">
+									<div  class="user-menu-item-text">New Source</div>
+								</div>
+								<a href="settings.html">
+									<div class="user-menu-item">
+										<div class="user-menu-item-text selected-menu-item">Settings</div>
+									</div>
+								</a>
+								<a href="login.html">
+									<div class="user-menu-item">
+										<div class="user-menu-item-text">Logout</div>
+									</div>
+								</a>
+							</div>
+							<div class="user-seperator"></div>
+							<div class="user-categories-panel">
+								<div class="user-category-item">
+									<div class="user-category-item-text">
+										All
+									</div>
+									<div class="user-category-item-count">
+										99
+									</div>
+								</div>
+								<div class="user-category-item">
+									<div class="user-category-item-text">
+										News
+									</div>
+									<div class="user-category-item-count">
+										99
+									</div>
+								</div>
+								<div class="user-category-item">
+									<div class="user-category-item-text">
+										Tech
+									</div>
+									<div class="user-category-item-count">
+										0
+									</div>
+								</div>
+								<div class="user-category-item">
+									<div class="user-category-item-text">
+										Unsorted
+									</div>
+									<div class="user-category-item-count">
+										1
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="content">
+						<div class="topbar-panel">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="menu-button"></div>
+									<div class="feed-title-panel">
+										<h1 class="feed-title">
+											Settings
+										</h1>
+									</div>	
+								</div>
+							</div>
+						</div>
+						<div class="news-panel">
+							<div class="story-item-container">
+								<div class="story-item">
+									<div class="story-item-title-container">
+										<h2 class="story-item-title">
+											Profile
+										</h2>
+
+									</div>
+									<div class="story-item-preview">
+										<form action="settings.html">
+											<div class="row">
+												<div class="col-md-6 form-settings-input-container">
+													<div class="form-settings-label">First Name</div>
+													<input class="form-settings-input" type="text" value ="Žan">
+												</div>
+												<div class="col-md-6 form-settings-input-container">
+													<div class="form-settings-label">Last Name</div>
+													<input class="form-settings-input" type="text"  value ="Pevec">
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-12 form-settings-input-container">
+													<div class="form-settings-label">Username</div>
+													<input class="form-settings-input" type="text"  value ="pevecyan">
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-8"></div>
+												<div class="col-md-4">
+													<div class="form-settings-submit">
+														Apply
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+									
+								</div>
+							</div>
+							<div class="story-item-container">
+								<div id="story-item-16" class="story-item">
+									<div class="story-item-title-container">
+										<h2 class="story-item-title">
+											Security
+										</h2>
+										
+									</div>
+									<div class="story-item-preview">
+										<form action="settings.html">
+											<div class="row">
+												<div class="col-md-12 form-settings-input-container">
+													<div class="form-settings-label">E-Mail</div>
+													<input class="form-settings-input" type="text"  value ="pevecyan@outlook.com">
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-6 form-settings-input-container">
+													<div class="form-settings-label">Password</div>
+													<input class="form-settings-input" type="password" value ="geslo123">
+												</div>
+												<div class="col-md-6 form-settings-input-container">
+													<div class="form-settings-label">Repeat Password</div>
+													<input class="form-settings-input" type="password"  value ="password">
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-8"></div>
+												<div class="col-md-4 ">
+													<div class="form-settings-submit">
+														Apply
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>	
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

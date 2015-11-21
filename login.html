@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<title>CLOUreaD</title>
+		<meta charset="UTF-8">
 		<!--JQUERY-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<!--BOOTSTRAP-->
@@ -12,6 +14,8 @@
 		<link rel="stylesheet" type="text/css" href="css/shared.css">
 		<link rel="stylesheet" type="text/css" href="css/login.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script src="js/login.js"></script>
+		<script src="js/common.js"></script>
 		
 	</head>
 	<div class="device-xs visible-xs"></div>
@@ -20,9 +24,11 @@
 	<div class="device-lg visible-lg"></div>
 	<body>
 		<div class="container">
-			<div class="logo-container">
-				<div class="logo"></div>
-			</div>
+			<a href="index.html">
+				<div class="logo-container">
+					<div class="logo"></div>
+				</div>
+			</a>
 			<div class="panel-login-registration panel-shadow">
 				<div class="row">
 					<div class="col-xs-12 col-md-5 login-form-panel">
@@ -40,13 +46,15 @@
 										</div>
 									</div>
 									<div class="row">
-										<div class="col-md-12"><input class="form-basic-input" placeholder="Username" type="text" name="username"/></div>
+										<div class="col-md-12">
+											<input id="LoginUsername" class="form-basic-input" placeholder="Username" type="text" name="username"/>	
+										</div>
 									</div>
 									<div class="row">
-										<div class="col-md-12"><input class="form-basic-input" placeholder="Password" type="password" name="password"/></div>
+										<div class="col-md-12"><input id="LoginPassword" class="form-basic-input" placeholder="Password" type="password" name="password"/></div>
 									</div>
 									<div class="row">
-										<div class="col-md-12"><div class="form-basic-submit login-submit">LOGIN</div></div>
+										<div class="col-md-12"><div id="LoginSubmit" class="form-basic-submit login-submit">LOGIN</div></div>
 									</div>
 								</div>
 							</form>
@@ -68,32 +76,32 @@
 								<div class="form-basic-inputs-container">
 									<div class="row">
 										<div class="col-md-12">
-											<input class="form-basic-input" placeholder="Username*" type="text" name="username"/>
+											<input id="RegistrationUsername" class="form-basic-input" placeholder="Username*" type="text" name="username"/>
 										</div>
 									</div>
 									<div class="row">
 										<div class="col-md-6">
-											<input class="form-basic-input" placeholder="First Name" type="text" name="firstName"/>
+											<input id="RegistrationFirstName" class="form-basic-input" placeholder="First Name" type="text" name="firstName"/>
 										</div>
 										<div class="col-md-6">
-											<input class="form-basic-input" placeholder="Last Name" type="text" name="lastName"/>
+											<input id="RegistrationLastName" class="form-basic-input" placeholder="Last Name" type="text" name="lastName"/>
 										</div>
 									</div>
 									<div class="row">
 										<div class="col-md-12">
-											<input class="form-basic-input" placeholder="E-Mail*" type="text" name="email"/>
+											<input id="RegistrationEmail" class="form-basic-input" placeholder="E-Mail*" type="text" name="email"/>
 										</div>
 									</div>
 									
 									<div class="row">
 										<div class="col-md-6">
-											<input class="form-basic-input" placeholder="Password*" type="password" name="password"/>
+											<input id="RegistrationPassword" class="form-basic-input" placeholder="Password*" type="password" name="password"/>
 										</div>
 										<div class="col-md-6">
-											<input class="form-basic-input" placeholder="Confirm*" type="password" name="passwordConfirm"/>
+											<input id="RegistrationPasswordConfirm" class="form-basic-input" placeholder="Confirm*" type="password" name="passwordConfirm"/>
 										</div>
 									</div>
-									<div><div class="form-basic-submit">REGISTER</div></div>
+									<div><div id="RegistrationSubmit" class="form-basic-submit">REGISTER</div></div>
 								</div>
 							</form>
 						</div>

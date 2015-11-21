@@ -53,3 +53,17 @@ body{
   padding: 0px;
   margin: 0px;
 }
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+.input-alert{
+  padding: 10px;
+  position: absolute;
+  right:0px;
+  left:0px;
+  z-index: 10;
+  background-color: #DC7F7A;
+}

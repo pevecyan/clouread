@@ -47,11 +47,12 @@
 }
 
 .feed-title{
+	margin-top: 0px;
 	text-align: center;
 	color:#fefefe;
 	font-family: 'Oswald', sans-serif;
 	font-size: 20px;
-	padding-top: 10px;
+	padding-top: 12px;
 }
 
 .search-panel{
@@ -97,19 +98,15 @@ input.search-input:focus {
 .news-panel{
 	padding-bottom: 20px;
 }
-.story-item-small-container{
-	height:180px;
-	padding: 15px;
+.story-empty{
+	font-family: 'Oswald', sans-serif;
+	margin-top: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: center;
+	font-size: 20px;
 }
 
-.story-item-small{
-	background-color: #eee;
-	border: 1px solid #ddd;
-	-webkit-border-radius:2px;
-	-moz-border-radius:2px;
-	border-radius:2px;
-	height: 150px;
-}
 .story-item-container{
 	margin-top: 20px;
 	padding-left: 20px;
@@ -129,16 +126,19 @@ input.search-input:focus {
 }
 .story-item-title{
 	height:50px;
-	max-width: 70%;
+	max-width: 75%;
 	padding-left: 10px;
 	padding-top: 12px;
-	font-size: 18px;
+	margin-top: 0px;
 	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
 	float: left;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
+
+
 .story-item-time{
 	float:right;
 	font-size: 12px;
@@ -252,7 +252,7 @@ input.search-input:focus {
 	text-align: center;
 	font-size: 20px;
 	color: #00aad4;
-		font-family: 'Oswald', sans-serif;
+	font-family: 'Oswald', sans-serif;
 }
 .user-name-panel{
 	margin-bottom: 20px;
@@ -262,15 +262,27 @@ input.search-input:focus {
 .user-menu-item{
 	font-family: 'Oswald', sans-serif;
 	height:50px;
+	 cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
+
+
+
 .user-menu-item:hover{
 	background-color: #2f363e;
+
 }
 .user-menu-item-text{
 	color: #888;
 	padding-top: 15px;
 	padding-left: 30px;
 }
+
 .selected-menu-item{
 	border-right: 5px solid #00aad4;
 }
@@ -281,6 +293,13 @@ input.search-input:focus {
 .user-category-item{
 	font-family: 'Oswald', sans-serif;
 	height:50px;
+	 cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .user-category-item:hover{
 	background-color: #2f363e;
@@ -325,9 +344,7 @@ input.search-input:focus {
 	right: 0;
 	z-index: 9999;
 }
-.overlay[class~=hidden]{
-	visibility: hidden;
-}
+
 .add-source-panel{
 	background-color: #FEFEFE;
 	padding-bottom: 30px;
@@ -449,7 +466,45 @@ input.search-input:focus {
 	background-color: #00aad4;
 }
 
+/*SETTINGS*/
+.form-settings-input-container{
+	padding: 30px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+.form-settings-label{
+	font-family: 'Oswald', sans-serif;
+	margin-bottom: 5px;
+}
+.form-settings-input{
+	outline: 0px;
+	width:100%;
+	border: 0px;
+	background-color: #ccc;
+	height:30px;
+	padding-left: 10px;
+}
+.form-settings-input:hover, .form-settings-input:focus{
+	background-color: #ddd;
+	outline: 0px;
+}
 
+.form-settings-submit{
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+	padding-top: 5px;
+	margin-top: 30px;
+	background-color: #212429;
+	height: 40px;
+	text-align: center;
+	color:#eee;
+	margin-right: 15px;
+	margin-left: 15px;
+	margin-bottom: 15px;
+}
+.form-settings-submit:hover{
+	background-color: #00aad4;
+}
 
 
 @media (max-width: 992px) {
